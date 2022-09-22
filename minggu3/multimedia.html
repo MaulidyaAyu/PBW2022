@@ -21,6 +21,10 @@
 		<audio controls autoplay muted>
 			<source src="audio1.mp3" type="audio/mpeg">
 		  </audio>
+		<p>
+		<button onclick="playVid()" type="button">Play video</button>
+		<button onclick="pauseVid()" type="button">Pause video</button>
+		</p>
     </body>
 	<script>
 	var vid = document.getElementById("myVideo");
@@ -50,6 +54,14 @@
 	
 	function pauseVid() {
 		vid.pause();
+	}
+
+	function playAud() {
+		aud.play();
+	}
+	
+	function pauseAud() {
+		aud.pause();
 	}
 	</script>
 </html>
