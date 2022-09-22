@@ -13,7 +13,7 @@
 		<button onclick="disableControls()" type="button">Disable video</button>
 		<button onclick="checkControls()" type="button">Check control status</button>
 		</p>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/A_btXzuo4LY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+		<iframe width="420" height="215" src="https://www.youtube.com/embed/A_btXzuo4LY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 		</iframe>
 		<video width="420" id="myVideo">
             <source src="video1.mp4" type="video/mp4">
@@ -21,14 +21,9 @@
 		<audio controls autoplay muted>
 			<source src="audio1.mp3" type="audio/mpeg">
 		  </audio>
-		<p>
-		<button onclick="playAud()" type="button">Play audio</button>
-		<button onclick="pauseAud()" type="button">Pause audio</button>
-		</p>
     </body>
 	<script>
 	var vid = document.getElementById("myVideo");
-	var vid = document.getElementById("myAudio");
 	
 	function enableControls() {
 	vid.controls = true;
@@ -57,12 +52,5 @@
 		vid.pause();
 	}
 
-	function playAud() {
-		aud.play();
-	}
-	
-	function pauseAud() {
-		aud.pause();
-	}
 	</script>
 </html>
