@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	body {
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+	/* Style the header */
+	header {
+	  background-color: rgba(173, 185, 150, 0.897);
+	  padding: 8px;
+	  text-align: center;
+	  font-size: 35px;
+	  color: white;
+	}
+
+	/* Create two columns/boxes that floats next to each other */
+	nav {
+	  float: left;
+	  width: 25%;
+	  background: rgba(207, 231, 205, 0.692);
+	  padding: 15px;
+	}
+
+	/* Style the list inside the menu */
+	nav ul {
+	  list-style-type: none;
+	  padding: 0;
+	}
+	
+	article {
+	  float: right;
+	  padding: 20px;
+	  width: 75%;
+	  background-color: rgba(222, 228, 210, 0.651);
+	}
+
+	/* Clear floats after the columns */
+	section::after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Style the footer */
+	footer {
+	  background-color: rgba(173, 185, 150, 0.897);
+	  padding: 3px;
+	  text-align: center;
+	  color: white;
+	}
+
+	/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+	@media (max-width: 600px) {
+	  nav, article {
+		width: 100%;
+		height: auto;
+	  }
+	}
+	</style>
+</head>
+	<body>
+		<header>
+		  <h2>PORTOFOLIO</h2>
+		</header>
+
+		<section>
+		  <nav>
+			<button type="button; ">
+			<ul>
+				<hr color="#77815c" style="width:90%; float: left;"><br>
+				<a href="#" style="float: left;">Home</a>
+				<hr color="#77815c" style="width:90%; float: left;"><br>
+				<a href="#" style="float: left;">CV</a>
+				<hr color="#77815c" style="width:90%; float: left;"><br>
+				<a href="#" style="float: left;">Contact</a>
+				<hr color="#77815c" style="width:90%; float: left;"><br>
+				<a href="#" style="float: left;">About Me</a>
+				<hr color="#77815c" style="width:90%; float: left;"><br>
+			</ul>
+			</button>		
+			</nav>
+		  
+		  <article>
+					<h1 style="text-align: center"><img src="pp.jpg" width="200" height="200" style="border-radius: 50%;"></h1>
+					<h1 style="text-align: center;">MAULIDYA AYU A</h1></p>
+					<p style="text-align: center;">jabatan</p>
+					<hr color="#77815c" style="width:90%;">
+
+			<h1 style="text-align: center;">Overview</h1>
+			<p>Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet.</p>
+			<p>Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet </p>
+		  
+			<div style="max-width: 600px; margin: 3em auto; background-color: transparent;"> 
+				<table border="1" width="100%"> 
+					<thead> 
+						<tr> 
+							<th>Skill</th> 
+							<th>Pengalaman</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr> 
+							<td> 
+								<ul> 
+									<li>Skill 1</li> 
+									<li>Skill 2</li> 
+									<li>Skill 3</li> 
+								</ul> 
+							</td> 
+							<td> 
+								<ul> 
+									<li>Pengalaman 1</li> 
+									<li>Pengalaman 2</li> 
+									<li>Pengalaman 3</li> 
+								</ul> 
+							</td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</article>
+		</section>
+
+		<hr color="#a4b48c" style="width:100%;">
+ 			<footer style="text-align: center;">
+				<p>Copyright &copy; 2022 neenaardiena.</p>
+			</footer>
+	</body>
+</html>
