@@ -93,17 +93,17 @@
                 <hr />
                 <div>
                     <h1>Kontak Saya </h1>
-                    <form>
-                        <label for="email">Email</label><br />
-                        <input type="email" name="email" placeholder="alamat email"/>
+                    <form method="post" action="contact.php">
+                        <label>Email</label><br />
+                        <input type="text" name="email" placeholder="alamat email" />
+					<br />
                     <br />
                     <br />
+                        <label for="pesan">Pesan</label><br />
+                        <input type="text" name="pesan"  placeholder="Tulis pesan anda..." rows="4" cols="80" />
+					<br />
                     <br />
-                        <label for="message">Pesan</label><br />
-                        <textarea name="message" placeholder="Tulis pesan anda..." rows="4" cols="80"></textarea>
-                    <br />
-                    <br />
-                        <input type="submit" value="Kirim" />
+                        <input type="submit" name="submit" value="Kirim" />
                     </form>
                 </div>
                  <hr />
