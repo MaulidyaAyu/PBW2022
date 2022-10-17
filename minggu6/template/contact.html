@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>personal contact</title>
+<link rel="shortcut icon" href="icon.jpg"; type="image/x-icon;">
+<link rel="icon" href="icon.jpg" type="image/x-icon;">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	body {
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+	/* Style the header */
+	header {
+	  background-color: rgba(173, 185, 150, 0.897);
+	  padding: 8px;
+	  text-align: center;
+	  font-size: 35px;
+	  color: white;
+	}
+
+	/* Create two columns/boxes that floats next to each other */
+	nav {
+	  float: left;
+	  width: 15%;
+	  background: rgba(207, 231, 205, 0.692);
+	  padding: 20px;
+	}
+
+	/* Style the list inside the menu */
+	nav ul {
+	  list-style-type: none;
+	  padding: 0;
+	}
+
+	nav ul a {
+		text-decoration: none;
+		color: whitesmoke;
+		font-size: 18px;
+		font-weight: 500;
+		padding: 8px 15px;
+		border-radius: 5%;
+		letter-spacing: 1.5px;
+		transition: all 0.5s ease;
+	}
+
+	nav ul a .aktif,
+	nav ul a:hover  {
+		color:rgba(173, 185, 150, 0.897);
+		background: whitesmoke;
+		padding: 15%;
+	}
+	
+	article {
+	  float: right;
+	  padding: 20px;
+	  width: 85%;
+	  background-color: rgba(222, 228, 210, 0.651);
+	}
+
+	/* Clear floats after the columns */
+	section::after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Style the footer */
+	footer {
+	  background-color: rgba(173, 185, 150, 0.897);
+	  padding: 3px;
+	  text-align: center;
+	  color: white;
+	}
+
+	/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+	@media (max-width: 600px) {
+	  nav, article {
+		width: 100%;
+		height: auto;
+	  }
+	}
+	</style>
+</head>
+	<body>
+		<header>
+		  <h2>CONTACT ME</h2>
+		</header>
+
+		<section>
+		    <nav>
+			    <ul>
+				    <hr color="#77815c" style="width: 88%; float: left;"><br>
+					<a class="aktif" href="index.html" style="float: left; color: rgba(173, 185, 150, 0.897);">Home</a><br>
+					<hr color="#77815c" style="width: 88%; float: left;"><br>
+					<a href="cv.pdf" style="float: left; color: rgba(173, 185, 150, 0.897);">Download CV</a><br>
+					<hr color="#77815c" style="width: 88%; float: left;"><br>
+					<a href="contact.html" style="float: left; color: rgba(173, 185, 150, 0.897);">Contact</a><br>
+					<hr color="#77815c" style="width: 88%; float: left;"><br>
+					<a href="about.html" style="float: left; color: rgba(173, 185, 150, 0.897);">About</a><br>
+					<hr color="#77815c" style="width: 88%; float: left;"><br>
+					<a href="sosmed.html" style="float: left; color: rgba(173, 185, 150, 0.897);">Social Media</a><br>
+					<hr color="#77815c" style="width: 88%; float: left;"><br>
+                </ul>
+		    </nav>
+		  
+		    <article>
+                <hr />
+                <div> 
+					<h1>Kontak Saya </h1> 
+					<form> 
+						<label for="email">Email</label><br /> 
+						<input type="email" name="email" placeholder="alamat email"/> 
+						<br /> 
+						<label for="message">Pesan</label><br /> 
+						<textarea name="message" placeholder="Tulis pesan anda..." rows="4" cols="80"></textarea> 
+						<br /> 
+						<br /> 
+						<input type="submit" value="Kirim" /> 
+					</form> 
+				</div>
+                 <hr />
+		    </article>
+		</section>
+
+		<hr color="#a4b48c" style="width:100%;">
+ 			<footer style="text-align: center;">
+				<p>Copyright &copy; 2022 neenaardiena.</p>
+			</footer>
+	</body>
+</html>
