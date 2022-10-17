@@ -37,6 +37,24 @@
 	  list-style-type: none;
 	  padding: 0;
 	}
+
+	nav ul a {
+		text-decoration: none;
+		color: whitesmoke;
+		font-size: 18px;
+		font-weight: 500;
+		padding: 8px 15px;
+		border-radius: 5%;
+		letter-spacing: 1.5px;
+		transition: all 0.5s ease;
+	}
+
+	nav ul a .aktif,
+	nav ul a:hover  {
+		color:rgba(173, 185, 150, 0.897);
+		background: whitesmoke;
+		padding: 15%;
+	}
 	
 	article {
 	  float: right;
@@ -71,44 +89,41 @@
 </head>
 	<body>
 		<header>
-		  <h2>ABOUT ME</h2>
+		  <h2>CONTACT ME</h2>
 		</header>
 
 		<section>
 		    <nav>
 			    <ul>
-				    <hr color="#77815c" style="width: 70%; float: left;"><br>
+				    <hr color="#77815c" style="width: 88%; float: left;"><br>
 				    <a href="index.html" style="float: left; color: rgba(173, 185, 150, 0.897);">Home</a><br>
-				    <hr color="#77815c" style="width: 70%; float: left;"><br>
+				    <hr color="#77815c" style="width: 88%; float: left;"><br>
 				    <a href="cv.pdf" style="float: left; color: rgba(173, 185, 150, 0.897);">Download CV</a><br>
-				    <hr color="#77815c" style="width: 70%; float: left;"><br>
-				    <a href="contact.html" style="float: left; color: rgba(173, 185, 150, 0.897);">Contact</a><br>
-				    <hr color="#77815c" style="width: 70%; float: left;"><br>
+				    <hr color="#77815c" style="width: 88%; float: left;"><br>
+				    <a class="aktif" href="contact.html" style="float: left; color: rgba(173, 185, 150, 0.897);">Contact</a><br>
+				    <hr color="#77815c" style="width: 88%; float: left;"><br>
 				    <a href="about.html" style="float: left; color: rgba(173, 185, 150, 0.897);">About</a><br>
-				    <hr color="#77815c" style="width: 70%; float: left;"><br>
+				    <hr color="#77815c" style="width: 88%; float: left;"><br>
                 </ul>
 		    </nav>
 		  
 		    <article>
                 <hr />
-                <h1>Tentang Saya </h1>
-                <p>
-                Hi, saya adalah web developer.
-                Saat ini sedang belajar HTML.
-                </p>
-                <p>
-                Saya masih baru dalam web development, karena itu
-                Saya tidak akan pernah berhenti belajar.
-                </p>
-                <p>
-                Saya ingin menguasai bahasa HTML, CSS, dan Javascript.
-                Simak video lengkap tentang saya.
-                </p>
-                <p>
-                    <video controls>
-                        <source src="video/video-about.webm" type="video/webm"/>
-                    </video>
-                </p>
+                <div>
+                    <h1>Kontak Saya </h1>
+                    <form method="post" action="contact.php">
+                        <label>Email</label><br />
+                        <input type="text" name="email" placeholder="alamat email" />
+					<br />
+                    <br />
+                    <br />
+                        <label for="pesan">Pesan</label><br />
+                        <input type="text" name="pesan"  placeholder="Tulis pesan anda..." rows="4" cols="80" />
+					<br />
+                    <br />
+                        <input type="submit" name="submit" value="Kirim" />
+                    </form>
+                </div>
                  <hr />
 		    </article>
 		</section>
