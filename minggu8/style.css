@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+
+header {
+    padding: 10px;
+    background-color: silver;
+    border: 2px solid grey;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    background-color: azure;
+    border: 1px solid grey;
+    margin-top: 0px;
+    display: block;
+    padding: 0px;
+}
+
+nav ul li a {
+    display: block;
+    color: pink;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+article {
+    float: left;
+    width: 80%;
+    background-color: whitesmoke;
+    padding : 0 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+.satu {
+    font-family: 'Courier New', Courier, monospace;
+    color: darkslateblue;
+}
+
+.dua {
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+}
