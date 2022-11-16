@@ -1,0 +1,60 @@
+body {
+    background: gray;
+    font-family: roboto;
+    text-align: center;
+}
+
+h1, h2 {
+    color: aliceblue;
+}
+
+.tengah {
+    margin: 10px auto;
+    width: 1150px;
+}
+
+.k1 {
+    background: papayawhip;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+}
+
+.k2 {
+    background: papayawhip;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    -ms-transform: rotate(30deg); /*support IE 9*/
+    -webkit-transform: rotate(30deg); /*support safari*/
+    transform: rotate(30deg); /*standard syntax*/
+}
+
+.k3 {
+    background: papayawhip;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    -ms-transform: rotate(90deg); /*support IE 9*/
+    -webkit-transform: rotate(90deg); /*support safari*/
+    transform: rotate(90deg); /*standard syntax*/
+}
+
+.k4 {
+    background: papayawhip;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    -ms-transform: rotate(-60deg); /*support IE 9*/
+    -webkit-transform: rotate(-60deg); /*support safari*/
+    transform: rotate(-60deg); /*standard syntax*/
+}
+
