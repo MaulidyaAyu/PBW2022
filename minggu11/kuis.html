@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kuis minggu 11</title>
+</head>
+<body>
+    <h2>Data Nama Mahasiswa</h2>
+    <form action="javascript:void(0);" method="POST" onsubmit="">
+        <input type="text" placeholder="Isikan Nama Mhs" id="tambahnama">
+        <input type="submit" value="+">
+    </form>
+    <div id="counter">
+        <!--dinamis pake js-->
+    </div>
+    <table border="1">
+        <thead>
+            <tr><td>Daftar Nama</td></tr>
+        </thead>
+        <tbody id="tambahnama">
+            <!--dinamis pake js-->
+        </tbody>
+    </table>
+    <script>
+        var app = new function () {
+            this.el = document.getElementById('daftarnama');
+            this.mhs = ["mawar", "suci", "bunga"];
+
+            this.barisAll = function() {
+                var data = '';
+                if (this.mhs.length > 0) {
+                    for(i=0; i<this.mhs.length; i++) {
+                        data += '<tr>';
+                        data += '<td>' + this.mhs[i] + '<input type="button" value="-"></td>';
+                        data += '</tr>';
+                    }
+                }
+                return this.el.innerHTML = data;
+            };
+            this.count = function(data) {
+                var count = document.getElementById('counter');
+                if (data) {
+                    count.innerHTML = data + 'mahasiswa';
+                }
+                else {
+                    count.innerHTML = 'data kosong';
+                }
+            };
+            this.add = function() {
+                //utk tmbh nama
+            }
+            this.del = function() {
+                //utk hapus
+            }
+        }
+        app.barisAll();
+    </script>
+</body>
+</html>
