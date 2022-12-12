@@ -33,12 +33,16 @@
                 if (this.mhs.length > 0) {
                     for(i=0; i<this.mhs.length; i++) {
                         data += '<tr>';
-                        data += '<td>' + this.mhs[i] + '<input type="button" value="-"></td>';
+                        data += '<td>'+ (i+1) +'</td>';
+                        data += '<td>' + this.mhs[i] + '</td>';
+                        data += '<td><input type="button" value="-" onclick="app.Del('+i+')">';
+                        data += '<input type="button" value="Upd" onclick="app.Upd('+i+')"></td>';
                         data += '</tr>';
                     }
                 }
+                this.count(this.mhs.length);
                 return this.el.innerHTML = data;
-            };
+            }
             this.count = function(data) {
                 var count = document.getElementById('counter');
                 if (data) {
@@ -47,13 +51,28 @@
                 else {
                     count.innerHTML = 'data kosong';
                 }
-            };
+            }
             this.add = function() {
                 //utk tmbh nama
+                if(tambahNama.value){
+                    this.mhs.push(tambahNama.value);
+                    app.refresh();
+                }
             }
             this.del = function() {
                 //utk hapus
+                if(confirm("Apakah Anda yakin akan menghapus?")){
+                    this.mhs.splice(data,1);
+                    app.refresh();
+                }
             }
+            this.Upd = function(data){
+                edit = prompt("Masukkan nama baru:");
+                if(edit){
+                    this.mhs[data] = edit;
+                    app.refresh();
+                }
+            }  
         }
         app.barisAll();
     </script>
