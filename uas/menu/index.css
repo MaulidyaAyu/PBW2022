@@ -74,7 +74,7 @@ form {
 /* class */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 20px;
   margin: 40px;
   grid-gap: 40px;
@@ -90,6 +90,7 @@ form {
 .card-animation {
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  height: 27%;
 }
 
 .details {
@@ -354,7 +355,7 @@ footer {
   text-align: center;
   color: white;
   position: fixed-bottom;
-  height: 160px;
+  height: 180px;
   bottom: 0;
   width: 100%;                                                                                                                                                                                          
 }
