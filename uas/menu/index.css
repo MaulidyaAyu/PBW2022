@@ -6,12 +6,12 @@
 
 body {
   font-family: 'poppins', Arial, Helvetica, sans-serif;
-  background-color: beige;
+  background-color: rgb(225,221,212);
 }
 
 /* Style the header */
 header {
-  background-color: rgba(173, 185, 150, 0.897);
+  background-color: #b5b8af;
   padding: 5px;
   text-align: left;
   font-size: 5px;
@@ -22,7 +22,7 @@ header {
 
 nav ul a .aktif,
 nav ul a:hover {
-  color: rgba(173, 185, 150, 0.897);
+  color: #b5b8af;
   background: rgb(230, 238, 229);
   padding: 5%;
 }
@@ -136,7 +136,7 @@ form {
   z-index: 2;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  color: rgb(141, 151, 122);
+  color: rgb(181,184,175);
 }
 
 .wrapper .icon span i {
@@ -250,7 +250,7 @@ form {
 .container-time {
 	background-color: transparent;
 	padding: 100px;
-	outline: 3px dashed #4b5c4be3;
+	outline: 3px dashed rgb(181,184,175);
 	outline-offset: -30px;
 	text-align: center;
 }
@@ -260,7 +260,7 @@ form {
 }
 
 .heading-days {
-	color:#4b5c4be3;
+	color:rgb(181,184,175);
 	font-size: 30px;
 }
 
@@ -272,6 +272,8 @@ form {
 	margin: 0 auto;
 	color: #000;
   background-color: transparent;
+  display: flex;
+	max-width: 500px;
 }
 form {
 	display: grid;
@@ -298,7 +300,7 @@ input,select {
 }
 
 .btn {
-	background-color: #4b5c4be3;
+	background-color: rgb(181,184,175);
 	color: #fff;
 	padding: 10px 20px;
 	border: none;
@@ -327,7 +329,7 @@ input,select {
 }
 
 @media screen and (max-width: 768px) {
-	.container {
+	.konten {
 		flex-direction: column;
 	}
 	.container-form  {
@@ -350,7 +352,7 @@ input,select {
 
 /* Style the footer */
 footer {
-  background-color: rgba(173, 185, 150, 0.897);
+  background-color: rgb(181,184,175);
   padding: 4px;
   text-align: center;
   color: white;
